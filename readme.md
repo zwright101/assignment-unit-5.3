@@ -7,9 +7,9 @@ This week, we'll be exploring objects by creating an application to help maintai
 - objects
 - HTML & CSS
 
-## Assignment - Building a Music Collection
+## Part 3 - Building a Music Collection
 
-Update the `music-collection.js` file to do the following:
+Update the `3-music-collection.js` file to do the following:
 
 > While working through the features below, make sure to commit after you complete a task! Your commit message should reflect what you added or changed since the previous commit.
 
