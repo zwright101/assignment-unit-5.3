@@ -40,11 +40,3 @@ function showCollection(collection){
 }
 showCollection(collection);
 
-let foundArtists = [];
-function findByArtist(){
-    for (let i = 0; i < collection.length; i++){
-        foundArtists.push(collection[i].title)
-        return foundArtists;
-    }
-}
-console.log(foundArtists);
