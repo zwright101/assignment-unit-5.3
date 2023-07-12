@@ -16,8 +16,8 @@ let collection = [];
 
 function addToCollection(title, artist, yearPublished){
     let albumToAdd = {
-        title: title,
-        artist: artist,
+        albumTitle: title,
+        artistName: artist,
         yearPublished: yearPublished,
     } 
     collection.push(albumToAdd);
@@ -35,8 +35,20 @@ console.log('Number of items in array:', collection.length);
 
 function showCollection(collection){
     for (let i = 0; i < collection.length; i++){
-        console.log(collection[i].title, "by", collection[i].artist, "published in", collection[i].yearPublished);
+        console.log(collection[i].albumTitle, "by", collection[i].artistName, "published in", collection[i].yearPublished);
     }
 }
 showCollection(collection);
 
+
+function findByArtist(artist) {
+    let foundArtist = [];
+    for (item of collection) {
+        if (`${item.artistName}` === artist) {
+            foundArtist.push(`${item.albumTitle} by ${item.artistName}, published in ${item.yearPublished}`);
+        }
+    } console.log(foundArtist);
+}
+findByArtist("Linkin Park");
+findByArtist("Coldplay");
+findByArtist("The Foo Fighters");
